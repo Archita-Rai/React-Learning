@@ -37,13 +37,13 @@ function App() {
       >
         <div className="h-[8rem] flex flex-wrap justify-center items-center px-2 py-2">
           <input
-            className="h-[3rem] bg-white outline-none rounded sm:w-sm px-1 text-md shadow-2xl"
+            className="h-[3rem] bg-white outline-none rounded-3xl sm:w-sm px-3 text-md shadow-4xl font-serif "  
             placeholder="Enter the Color"
             value={inputColor}
             onChange={handleOnChnage}
           ></input>
           <button
-            className="outline-none text-white px-4 py-2 rounded text-lg shadow-2xl ms-1 h-[3rem]"
+            className="outline-none text-white px-6 py-2 rounded-3xl text-lg shadow-4xl ms-1 h-[3rem]  bg-linear-to-t from-sky-500 to-indigo-500 font-serif "
             style={{ backgroundColor: "purple" }}
             onClick={handleApplyColor}
           >
@@ -52,10 +52,9 @@ function App() {
         </div>
         {error && (
           <p
-            className=" bg-white p-3 inline-block rounded-xl "
-            style={{ color: "red" }}
+            className=" bg-linear-to-t from-sky-500 to-indigo-500 text-white px-6 py-3 inline-block rounded-3xl "
           >
-            ❌ Invalid color. Try: red, green, #ff6600...
+           <span style={{color:"white"}}>❌</span>  Invalid color. Try: red, green, #ff6600...
           </p>
         )}
         <div className="fixed flex flex-wrap justify-center bottom-11 px-2 inset-x-12  ">

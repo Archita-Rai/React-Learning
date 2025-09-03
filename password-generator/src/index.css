@@ -1,0 +1,39 @@
+@import "tailwindcss";
+body{
+  background-color: #17313E;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button:active {
+  transform: scale(0.95);
+}
+@media only screen and (max-width:640.98px){
+   .password-input{
+     width:20rem
+   }
+}
+@media only screen and (max-width:640px) {
+  .copy{
+    width:20rem !important;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width:640px){
+  .range{
+    width:25rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .number{
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width:410px){
+ .container{
+  width: 20rem;
+ }
+}

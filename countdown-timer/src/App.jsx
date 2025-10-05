@@ -35,6 +35,7 @@ function App() {
   };
   const handleReset = () => {
     setIsStart(false);
+    setIsPaused(false)
     resetValues();
   };
 

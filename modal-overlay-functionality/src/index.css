@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  background-color: indigo;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  cursor: pointer;
+}
+
+.btn {
+  height: 3rem;
+  width: 7rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 0.5ms;
+  cursor: pointer;
+  color: indigo;
+}
+
+.btn:active {
+  background-color: blueviolet;
+  color: white;
+  transform: scale(0.95);
+}
+
+.modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.close > button{
+  padding: 0.6rem 0.8rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: red;
+  color:white;
+  margin: 0.4rem 0.5rem;
+}
+.accept-offer {
+  background-color: white;
+  position: absolute;
+  height: 10rem;
+  width: 20rem;
+  padding:0.6rem 0.8rem;
+}
+
+.offer-accept-btn{
+  background-color: green;
+  color: white;
+}
+
+.offer-accepted-container{
+  background-color: white;
+  padding: 0.8rem 1rem;
+  color: green;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 10px;;
+}
